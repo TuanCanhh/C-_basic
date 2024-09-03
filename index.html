@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cờ Việt Nam</title>
+    <style>
+        .flag {
+            position: relative;
+            width: 100vw; /* Chiều rộng của lá cờ */
+            max-width: 600px; /* Chiều rộng tối đa của lá cờ */
+            height: 60vw; /* Chiều cao của lá cờ */
+            max-height: 400px; /* Chiều cao tối đa của lá cờ */
+            background-color: #da251d; /* Màu đỏ nền của lá cờ */
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .star {
+            width: 30%; /* Kích thước của ngôi sao tương đương 30% chiều rộng của lá cờ */
+            aspect-ratio: 1; /* Giữ tỷ lệ 1:1 để ngôi sao không bị méo */
+            background-color: #ff0; /* Màu vàng của ngôi sao */
+            clip-path: polygon(
+                50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
+                50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+            );
+        }
+    </style>
+</head>
+<body>
+    <div id="vietnam" class="flag">
+        <div class="star"></div>
+    </div>
+</body>
+</html>
